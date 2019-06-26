@@ -1,0 +1,143 @@
+.work
+    display: block
+    position: relative
+
+   
+
+    .workLabel
+        background: white
+        height: 100vh
+        z-index: 1200
+        display: flex
+        align-items: center
+        justify-content: center
+        
+
+        h1
+            font-family: 'Fascinate Inline', cursive
+            text-align: center
+            font-size: 40px
+
+    .workContent
+        height: 100%
+
+        .workBack:hover
+            background-size: 200% 
+        .workBack
+            +size(100%,100vh)
+            background: url('../../img/nbb.jpg')
+            background-position: center
+            background-size: 150%
+            background-repeat: no-repeat
+            transition: .3s ease-in-out
+            margin: auto
+
+            .work1
+                height: 100%
+                display: flex
+                flex-flow: column
+                align-items: center
+                justify-content: center
+
+                .nairobi
+                    height: 70%
+                    h2
+                        margin: auto
+                        padding-top: 10px
+                        text-align: center
+                        color: white
+                    figure
+                        margin: auto
+                        text-align: center
+                        height: 200px
+
+                        img
+                            height: 100%
+
+            
+
+        
+            
+        
+
+
+                    
+        .workBack2:hover
+            background-size: 250%
+            background-position: center -120px
+
+        .workBack2
+            +size(100%,100vh)
+            background: url('../../img/gas.jpg')
+            background-position: center -150px
+            background-size: cover 
+            background-repeat: no-repeat
+            margin: auto
+            transition: all 20s ease-in-out 
+            position: relative
+
+            .work2
+                height: 100%
+                display: flex
+                flex-flow: column
+                justify-content: center
+                align-items: center
+
+                .motogas
+                    height: 70%
+                    padding: 20px 0
+
+                    svg
+                        margin-top: 23vh
+                    
+                    h2
+                        margin: auto
+                        padding-top: 10px
+                        text-align: center
+                        color: white
+                    figure
+                        margin: auto
+                        text-align: center
+                        height: 80px
+
+                        img
+                            height: 100%
+                            margin-top: 10vh
+
+        
+            
+
+    @media screen and (min-width:960px)
+        display: flex
+        position: relative
+
+              
+        .workLabel
+            width: 50%
+
+        .workContent
+            width: 50%
+            height: 100%
+            padding: 0
+            margin: 0 0 auto auto
+
+            
+    svg
+        height: 120px
+        margin: auto  
+        width: 100%
+    .cls-1
+        fill: #ffffff
+    .cls-2,.cls-3,.cls-4
+        fill: none
+        stroke: #ffffff
+        stroke-miterlimit: 10
+    .cls-2
+        stroke-width: 8px
+    .cls-3
+        stroke-width: 5px
+    .cls-4
+        stroke-width: 6px
+    .cls-5
+        fill: #292929
+        

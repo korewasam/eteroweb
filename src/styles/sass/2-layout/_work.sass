@@ -21,15 +21,12 @@
     .workContent
         height: 100%
 
-        .workBack:hover
-            background-size: 200% 
         .workBack
             +size(100%,100vh)
             background: url('../../img/nbb.jpg')
             background-position: center
-            background-size: 150%
+            background-size: cover
             background-repeat: no-repeat
-            transition: .3s ease-in-out
             margin: auto
 
             .work1
@@ -62,18 +59,14 @@
 
 
                     
-        .workBack2:hover
-            background-size: 250%
-            background-position: center -120px
 
         .workBack2
             +size(100%,100vh)
             background: url('../../img/gas.jpg')
-            background-position: center -150px
+            background-position: center
             background-size: cover 
             background-repeat: no-repeat
             margin: auto
-            transition: all 20s ease-in-out 
             position: relative
 
             .work2

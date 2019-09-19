@@ -4,7 +4,7 @@
         
 
     .left
-        background: $gray
+        background: $yellow
         display: flex
         align-items: center
         justify-content: center
@@ -17,30 +17,58 @@
             text-align: center
             font-family: 'Fascinate Inline', cursive
             font-size: 40px
-            color: white
+            color: #121212
             
     .right
         height: 100%
-        padding: 24px
         background: white
-        
 
-        p
-            font-size: 16px
-            line-height: 28px
-            text-align: start
-            margin: auto
-            font-family: 'Nunito',sans-serif
-        
-        h1
-            font-size: 18px
+        .right-content
+            padding-top: 50px
+            padding-left: 30px
+            padding-right: 30px
+            padding-bottom: 50px
             font-family: 'Nunito Sans', sans-serif
-            font-weight: 700
+            font-weight: 300
+            font-size: 1em
+            line-height: 28px
 
-        section
-            padding: 12px
-            max-width: 700px
-            margin: auto    
+            .tools
+                li
+                    color: #35ABBC
+
+                    span
+                        color: #121212
+
+            .process
+                list-style: none
+                margin-top: 50px
+                
+                span
+                    color: #35ABBC
+                    margin-right: 8px
+                h6
+                    margin: 20px 10px
+                    text-transform: uppercase
+                    font-weight: 800
+
+            p
+                margin-top: 40px
+            
+            h5
+                font-size: 22px
+            h6
+                font-size: 1.2em
+                margin-bottom: 0
+                margin-left: 15px
+
+            ul
+                margin-top: 0px
+
+            .about-bold
+                font-weight: 800
+        
+            
 
     @media screen and (min-width: 960px)
         display: flex

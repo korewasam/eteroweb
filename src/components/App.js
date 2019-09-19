@@ -8,9 +8,7 @@ import Footer from './footer';
 import { TimelineLite, TimelineMax, TweenLite } from 'gsap/all'
 import Cursor from './cursor2';
 import charming from 'charming'
-import { TweenMax } from 'gsap/all';
 import { Power4, Power1 } from 'gsap/TweenMax';
-import scrollTop from 'gsap/ScrollToPlugin'
 import Parallax from 'parallax-js'
 
 
@@ -60,7 +58,7 @@ class App extends Component {
       this.setState({ vh: window.innerHeight })
     })
 
-    /* this.tl
+     this.tl
       .addLabel('start')
       .from(this.topLeftRef.current, .8, {opacity: 0, scale: 2.5, x: -50, y: '-200%', ease: Power4.easeOut })
       .fromTo(this.topRef.current, .8, {opacity: 0, scale: 2,  y: '-170%', ease: Power4.easeOut },{opacity: 1, scale: 1,y:'0%', x:'-50%'}, '-=0.7')
@@ -75,7 +73,7 @@ class App extends Component {
       .eventCallback('onComplete', ()=>{
         if(window.innerWidth > 1000){const paralaxInstance = new Parallax(scene)}
       })
-      //.play() */
+      .play() 
 
     
 
@@ -171,7 +169,6 @@ class App extends Component {
           </div>
           <nav className="links">
             <ul>
-              <li><a className='link' >HOME</a></li><span>|</span>
               <li><a className='link' href="#about">ABOUT</a></li><span>|</span>
               <li><a href="#work" className='link'>WORK</a></li><span>|</span>
               <li><a href="#contacts" className='link'>CONTACTS</a></li>

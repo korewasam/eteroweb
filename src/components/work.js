@@ -184,8 +184,8 @@ class Work extends Component {
                     </div>
                     <div ref = {this.workbackRef2} className="workBack2">
                         <div className="work2">
-                            <div className="motogas"><figure><img src={moto} alt=""/></figure>
-                            <svg width="309" height="220" viewBox="0 0 309 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div className="motogas" ><figure><img src={moto} alt=""/></figure>
+                             <a href="https://motogas3.firebaseapp.com/" target= '_blank'><svg width="309" height="220" viewBox="0 0 309 220" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="motobutt">
                                 <g ref = {this.motoC1} id="circle1">
                                 <path id="Vector" d="M33.7 137.25C41.0454 137.25 47 131.295 47 123.95C47 116.605 41.0454 110.65 33.7 110.65C26.3546 110.65 20.4 116.605 20.4 123.95C20.4 131.295 26.3546 137.25 33.7 137.25Z" fill="#DE4C6F"/>
@@ -219,7 +219,7 @@ class Work extends Component {
                                 <path id="Vector_13" d="M178 188.91V171.28H189.81V173.83H181.15V178.68H189.31V181.21H181.15V186.36H189.81V188.91H178Z" fill="#DE4C6F"/>
                                 </g>
                                 </g>
-                        </svg>
+                        </svg></a>
                         </div>
                             
                         </div>

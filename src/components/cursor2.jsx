@@ -6,10 +6,7 @@ import SimplexNoise from 'simplex-noise'
 
 
 export default class Cursor extends Component {
-    constructor(props) {
-        super(props)
-
-    }
+    
 
     componentDidMount() {
         //log

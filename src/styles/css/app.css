@@ -10,7 +10,6 @@ html, body {
   font-family: "Verdana", "Geneva", sans-serif;
   overflow-x: hidden;
   cursor: none;
-  height: calc('auto' + 200px);
 }
 
 html {

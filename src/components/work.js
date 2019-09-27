@@ -92,7 +92,6 @@ class Work extends Component {
         //button hover
         this.workbackRef1.current.onmouseenter = ()=>
         {
-            console.log('hey')
             tlnbb.play()
             
         }
@@ -102,7 +101,6 @@ class Work extends Component {
         }
         this.workbackRef2.current.onmouseenter = ()=>
         {
-            console.log('hey')
             tlmoto.play()
             
         }
@@ -137,7 +135,6 @@ class Work extends Component {
                 }})
             }
             else if(window.scrollY >= bottom){
-                console.log('heyyyyyy')
                 this.setState({style:{
                     position:'absolute',
                     bottom:0,
@@ -162,7 +159,7 @@ class Work extends Component {
                         <div className = 'nairobi' >
                             <figure><img src={biblew} alt=""/></figure>
                             <h2>Nairobi Bold Believers</h2>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 309 219.12">
+                            <a href="http://nbbelievers.com" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 309 219.12">
                                 <title>more </title>
                                 <g id="Layer_2" data-name="Layer 2">
                                 <g ref = {this.circle1} id="circle1"><circle className="cls-1" cx="33.7" cy="123.95" r="13.3"/></g>
@@ -179,6 +176,7 @@ class Work extends Component {
                                 <path className="cls-5" d="M175.37,188.91h-3.5l-3-5.63a2.55,2.55,0,0,0-1-1.12,3.36,3.36,0,0,0-1.58-.33h-2.44v7.08H160.6V171.28h7.8a6.84,6.84,0,0,1,4.56,1.34,4.81,4.81,0,0,1,1.57,3.86,4.9,4.9,0,0,1-1.14,3.34,5.4,5.4,0,0,1-3.21,1.71,3.65,3.65,0,0,1,2.25,2Zm-4.75-10.24a2.54,2.54,0,0,0,.85-2.11,2.49,2.49,0,0,0-.85-2.11,4.26,4.26,0,0,0-2.67-.67h-4.2v5.58H168A4.19,4.19,0,0,0,170.62,178.67Z"/>
                                 <path className="cls-5" d="M178,188.91V171.28h11.81v2.55h-8.66v4.85h8.16v2.53h-8.16v5.15h8.66v2.55Z"/></g></g>
                                 </svg>
+                                </a>
                                 </div>
                         </div>
                     </div>

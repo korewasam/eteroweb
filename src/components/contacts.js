@@ -7,13 +7,11 @@ class Contacts extends Component {
                 <div className="contactsLeft"><h1>CONTACTS</h1></div>
                 <div className="contactsRight">
                     <div className="wrapper">
-                        <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Corrupti mollitia quis quisquam accusantium. Reiciendis, temporibus
-                            architecto neque error illo laudantium, repudiandae id voluptatum dolor
-                            quasi consectetur maxime odit in dolores!s</strong>
+                        <p><strong>I'm always excited to work on new projects.
+                            Let's make something beautiful.</strong>
                         </p>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, tempora!
+                            I am available for freelance projects anywhere in the world
                         </p>
                         <h2>Sam Njuguna</h2>
                         <p>Web Design & development <br/> korewasam@gmail.com <br/> +254724273463 </p>

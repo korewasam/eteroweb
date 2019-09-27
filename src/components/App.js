@@ -34,6 +34,8 @@ class App extends Component {
     this.linkTl = new TimelineLite({ paused: true })
     //this.parallaxScene = new Parallax(this.scene)
 
+    this.setFixedLink = this.setFixedLink.bind(this)
+
     //STATE
     this.state = {
       vh: window.innerHeight,
@@ -129,7 +131,27 @@ class App extends Component {
     }//end of the init hovers
     initHovers()
 
+    //trigger leaving he hero section 
 
+    document.addEventListener('scroll',this.setFixedLink)
+
+
+  }
+
+  setFixedLink(){
+    let scroll = window.scrollY
+
+    if(scroll> window.innerHeight){
+      
+      if(this.refs.fixed.style.bottom !== '0px'){
+        TweenLite.to(this.refs.fixed, 1, {bottom: 0, ease: Power4.easeOut})
+      }
+    }
+    else{
+      if(this.refs.fixed.style.bottom === '0px'){
+        TweenLite.to(this.refs.fixed, .5, {bottom: '-100%', ease: Power4.easeIn})
+      }
+    }
   }
 
   scrollto() {
@@ -168,6 +190,13 @@ class App extends Component {
             <div data-depth='0.35' className="scene_container"><img ref={this.comeRef} id="come" src={require('../img/landing/come.png')} alt="" /></div>
           </div>
           <nav className="links">
+            <ul>
+              <li><a className='link' href="#about">ABOUT</a></li><span>|</span>
+              <li><a href="#work" className='link'>WORK</a></li><span>|</span>
+              <li><a href="#contacts" className='link'>CONTACTS</a></li>
+            </ul>
+          </nav>
+          <nav ref  = 'fixed' className="links fixed">
             <ul>
               <li><a className='link' href="#about">ABOUT</a></li><span>|</span>
               <li><a href="#work" className='link'>WORK</a></li><span>|</span>

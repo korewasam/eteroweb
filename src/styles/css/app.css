@@ -43,6 +43,15 @@ html {
   position: relative;
 }
 
+.hero .fixed {
+  position: fixed;
+  bottom: -100%;
+  background: #FF9595;
+  padding: 10px;
+  z-index: 10000;
+  opacity: .6;
+}
+
 .hero nav {
   position: absolute;
   bottom: 40px;
@@ -664,7 +673,8 @@ html {
 .contacts .contactsRight .wrapper p {
   line-height: 28px;
   font-size: 16px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
   margin-bottom: 25px;
   letter-spacing: normal;
 }
@@ -693,7 +703,7 @@ html {
 
 footer {
   height: 200px;
-  background: #292929;
+  background: #121212;
   overflow: hidden;
   z-index: -20;
   position: relative;

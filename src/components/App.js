@@ -5,7 +5,7 @@ import About from './about';
 import Work from './work';
 import Contacts from './contacts';
 import Footer from './footer';
-import { TimelineLite, TimelineMax, TweenLite } from 'gsap/all'
+import { TimelineLite, TimelineMax, TweenLite, Power2 } from 'gsap/all'
 import Cursor from './cursor2';
 import charming from 'charming'
 import { Power4, Power1 } from 'gsap/TweenMax';
@@ -30,6 +30,8 @@ class App extends Component {
     this.middleRef = React.createRef()
     this.welRef = React.createRef()
     this.comeRef = React.createRef()
+    this.imRef = React.createRef()
+    this.samRef = React.createRef()
     this.tl = new TimelineLite({ paused: true })
     this.linkTl = new TimelineLite({ paused: true })
     //this.parallaxScene = new Parallax(this.scene)
@@ -72,6 +74,10 @@ class App extends Component {
       .fromTo(this.comeRef.current, 2, {opacity: 0, ease: Power4.easeOut , x:'60%'},{opacity:1, ease: Power4.easeOut, x:'-55%'}, '-=1.8')
       .from(this.backLeftRef.current, 2, {x:'-50%',rotation: 50, opacity: 0, ease: Power4.easeOut}, '-=1')
       .from(this.backRightRef.current, 2, {x:'50%',rotation: -50, opacity: 0, ease: Power4.easeOut}, '-=1.4')
+      .to(this.welRef.current, .3, {opacity:0, x: '-60%', ease: Power4.easeOut}, '-=.5')
+      .to(this.imRef.current, .6, {ease: Power2.easeOut, opacity: 1, x: '-50%'},'-=.1')
+      .to(this.comeRef.current, .4, {opacity:0, x: '-40%', ease: Power4.easeOut}, '-=.9')
+      .fromTo(this.samRef.current, .7,{x:'-70%', opacity:0}, {ease: Power2.easeOut, opacity: 1, x: '-53%'},'-=.5')
       .eventCallback('onComplete', ()=>{
         if(window.innerWidth > 1000){const paralaxInstance = new Parallax(scene)}
       })
@@ -186,8 +192,10 @@ class App extends Component {
             <div data-depth='0.11' className="scene_container"><img ref={this.topLeftRef} id="middle-topleft" src={require('../img/landing/middle-topleft.png')} alt="" /></div>
             <div data-depth='0.15' className="scene_container"><img ref={this.topRightRef} id="middle-topright" src={require('../img/landing/middle-topright.png')} alt="" /></div>
             <div data-depth='0.18' className="scene_container"><img ref={this.welRef} id="wel" src={require('../img/landing/wel.png')} alt="" /></div>
+            <div data-depth='0.18' className="scene_container"><img ref={this.imRef} id="im" src={require('../img/landing/IM.png')} alt="" /></div>
             <div data-depth='0.25' className="scene_container"><img ref={this.middleRef} id="middle" src={require('../img/landing/middle.png')} alt="" /></div>
             <div data-depth='0.35' className="scene_container"><img ref={this.comeRef} id="come" src={require('../img/landing/come.png')} alt="" /></div>
+            <div data-depth='0.35' className="scene_container"><img ref={this.samRef} id="sam" src={require('../img/landing/SAM.png')} alt="" /></div>
           </div>
           <nav className="links">
             <ul>

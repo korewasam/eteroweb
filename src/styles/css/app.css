@@ -52,6 +52,10 @@ html {
   opacity: .6;
 }
 
+.hero .fixed:hover {
+  opacity: 1;
+}
+
 .hero nav {
   position: absolute;
   bottom: 40px;
@@ -168,8 +172,14 @@ html {
   top: 30%;
   left: 50%;
   height: 10vh;
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
+}
+
+.hero #scene .scene_container #im {
+  display: block;
+  top: 30%;
+  left: 50%;
+  height: 10vh;
+  opacity: 0;
 }
 
 .hero #scene .scene_container #come {
@@ -177,8 +187,14 @@ html {
   top: 50%;
   left: 50%;
   height: 10vh;
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
+}
+
+.hero #scene .scene_container #sam {
+  display: block;
+  top: 50%;
+  left: 50%;
+  height: 10vh;
+  opacity: 0;
 }
 
 .hero #scene .scene_container #middle-top {

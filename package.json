@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "charming": "^3.0.1",
-    "gsap": "^2.1.2",
+    "gsap": "^3.6.0",
     "lottie-web": "^5.5.9",
     "paper": "^0.12.3",
     "parallax-js": "^3.1.0",
